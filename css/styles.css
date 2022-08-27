@@ -1,0 +1,1026 @@
+:root {
+    --white: #fff;
+    --navy: #1D3152;
+    --blue: #4B7BD0;
+    --green: #60a035;
+    --orange: #C46723;
+    --grey: #5a5a5a;
+    --lightGrey: #cecece;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav li,
+.socials li {
+    list-style: none;
+}
+
+header .hero-right {
+    background-image: url('../img/developer.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.hero-right img {
+    position: 50%;
+}
+
+header .right-side {
+    background-image: url('../img/stairs.png');
+    background-repeat: no-repeat;
+    background-position: -30%;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* NAVBAR STYLING STARTS */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--navy);
+    color: var(--white);
+    box-shadow: 0 6px 6px -2px rgba(0, 0, 0, .2);
+}
+
+.home-btn,
+.work-btn,
+.contact-btn {
+    margin-top: 8px;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.nav-links a,
+.my-work p a {
+    color: var(--white);
+}
+
+/*DOWNLOAD RESUME BTN*/
+#download-btn {
+    font-size: 18px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/*underline animation for header and footer list items*/
+header .nav-link a,
+footer .socials a {
+    position: relative;
+}
+
+.nav-link a:before,
+.socials a:before {
+    /*adding an element before the anchor element and applying animaion styles to it.*/
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: 2px;
+    bottom: 8px;
+    left: -50%;
+    top: 26px;
+    background-color: var(--white);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out 0s;
+}
+
+
+.menu a:hover:before,
+.socials a:hover:before {
+    opacity: 1;
+    left: 0;
+    transform: scaleX(1);
+}
+
+.socials li:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 44px;
+    user-select: none;
+    color: var(--white);
+    border: none;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.btn.hamburger {
+    background-color: #f000;
+}
+
+.btn.btn-outline-primary {
+    border-radius: 0px;
+    background-color: var(--white);
+    color: var(--navy);
+    border: 3px solid var(--blue);
+}
+
+.btn.btn-outline-primary:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    transition: 0.1s ease;
+}
+
+.nav .container {
+    max-width: 1200px;
+}
+
+.nav .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav .navbar .btn {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-left {
+    background-color: var(--blue);
+    flex: 2.5;
+}
+
+.hero-right {
+    background-color: var(--navy);
+    flex: 2;
+}
+
+section.hero {
+    display: flex;
+    margin-top: 108px;
+}
+
+
+.hero-right img {
+    position: absolute;
+    left: 626px;
+    top: 160px;
+    max-width: 100%;
+}
+
+h1 {
+    padding-left: 160px;
+    padding-top: 50px;
+    font-size: 64px;
+    line-height: 77px;
+    color: var(--white);
+}
+
+p.intro {
+    padding-left: 160px;
+    padding-top: 22px;
+    font-size: 20px;
+    color: var(--white);
+}
+
+#avatar-shapes {
+    right: 6.600000000000001em;
+    position: absolute;
+}
+
+.bow-arrow {
+    width: 3.1em;
+    height: 1.7em;
+    margin-left: 1.55em;
+}
+
+.bow-arrow path {
+    stroke: currentColor;
+}
+
+section.work-content,
+.build-design,
+.write-occasionally {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#building {
+    gap: 5em;
+    margin-top: 8%;
+}
+
+/*I build and design often */
+.build-design {
+    width: 500px;
+    height: 400px;
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.build h2,
+.write h2 {
+    font-weight: 900;
+}
+
+.build p,
+.write p {
+    font-size: 20px;
+}
+
+.build #work-btn,
+.write #articles-btn,
+form #shoot-form {
+    padding: 10px 40px 10px 50px;
+}
+
+#work-btn:hover,
+#articles-btn:hover {
+    color: var(--white);
+    font-weight: bold;
+}
+
+/*I write occationally */
+.write-occasionally {
+    width: 500px;
+    height: 400px;
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+#work-btn,
+#articles-btn {
+    margin-top: 8%;
+}
+
+
+/* FORM */
+
+section#send-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#message-form {
+    padding-top: 28px;
+}
+
+/*Send me a message*/
+.inner-content {
+    background-color: var(--grey);
+    height: 500px;
+    width: 1080px;
+    color: var(--white);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/*Contact form heading*/
+.content-l2-heading {
+    text-align: center;
+    padding-top: 48px;
+    font-weight: 900;
+}
+
+.form-control::placeholder {
+    color: var(--lightGrey);
+}
+
+/*Contact form paragraph*/
+.content-para {
+    text-align: center;
+    /* padding-left: 323px; */
+    padding-top: 2px;
+    font-size: 16px;
+}
+
+.firstRow,
+.secondRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-Name {
+    width: 400px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid var(--blue);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--white);
+}
+
+#user-email {
+    width: 398px;
+    border-radius: 0px;
+    margin-left: -2px;
+    background-color: transparent;
+    border-bottom: 3px solid var(--blue);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--white);
+}
+
+
+#message-col {
+    width: 836px;
+    background-color: transparent;
+    border-bottom: 3px solid var(--blue);
+    margin-top: 42px;
+}
+
+.form-control::placeholder {
+    color: var(--lightGrey);
+}
+
+#user-message {
+    max-height: 80px;
+    min-height: 62px;
+    background-color: transparent;
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--white);
+    border-bottom: 3px;
+}
+
+label {
+    cursor: pointer;
+}
+
+#message-form input:hover,
+#message-form input:active,
+#message-form input:focus {
+    outline: 1px dotted;
+}
+
+#message-form textarea:hover,
+#message-form textarea:active,
+#message-form textarea:focus {
+    outline: 1px dotted;
+}
+
+.form-btn {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#shoot-form:hover {
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+.contact-developer {
+    background-color: var(--navy);
+    color: var(--white);
+    width: 100%;
+    margin-top: 8%;
+    height: 408px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.say-hello {
+    padding-top: 80px;
+}
+
+.say-hello h2 {
+    font-weight: 900;
+}
+
+.my-work {
+    padding-top: 126px;
+}
+
+.site-email {
+    color: var(--white);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.site-email:hover,
+.site-email:active,
+.site-email:focus {
+    color: var(--white);
+    transition: 0.3s ease;
+}
+
+.site-email:focus {
+    background-color: var(--green);
+    outline: 1px dotted;
+}
+
+.socials {
+    display: flex;
+    gap: 30px;
+}
+
+.socials i {
+    font-size: 38px;
+    cursor: pointer;
+    color: var(--white);
+}
+
+hr {
+    margin-left: 240px;
+    margin-right: 270px;
+    margin-top: 46px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.cd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20em;
+    padding-top: 42px;
+}
+
+.container-socials {
+    margin-left: -28px;
+}
+
+
+/******************************* build.html file style's START for when See my work btn is clicked*/
+
+.developers-work {
+    text-align: center;
+    margin-top: 16%;
+}
+
+#work {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin-top: 6%;
+}
+
+#work a {
+    margin-top: 20px;
+}
+
+.activity-brief-info,
+.personal-brief-info {
+    background-color: var(--grey);
+    color: var(--white);
+    text-align: center;
+    padding: 26px 0px 26px 0px;
+}
+
+/*Space between btn's*/
+#activity-live-btn,
+#personal-live-btn {
+    margin-right: 40px;
+}
+
+/******************************* build.html file style's END */
+
+/******************************* write.html file style's start */
+.article-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.article-section time {
+    color: var(--grey);
+}
+
+.article-0 {
+    margin-top: 4px;
+    margin: auto;
+    width: 1080px;
+    padding: 10px;
+    border-bottom: 2px solid var(--grey);
+}
+
+.title-container {
+    color: var(--grey);
+}
+
+.title-container:hover {
+    color: var(--blue);
+}
+
+.developers-work h2 {
+    color: var(--grey);
+}
+
+/******************************* write.html file style's end */
+
+
+
+
+
+/******************************* articles.html file style's start */
+
+.note-time {
+    margin-right: 14vw;
+}
+
+.note {
+    border-bottom: 2px solid var(--grey);
+}
+
+.web-accessibility-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.article-foundation {
+    width: 1080px;
+    margin-top: 223px;
+    padding: 10px;
+    color: var(--grey);
+}
+
+.post-header-title {
+    margin-top: 4%;
+}
+
+.return {
+    transform: scaleX(-1);
+    margin-right: 20px;
+}
+
+#return-btn {
+    padding-right: 40px;
+    text-decoration: none;
+}
+
+#return-btn:hover {
+    font-weight: bold;
+}
+
+/* Tim Berners Lee Block Quote Start */
+blockquote p:first-of-type::before {
+    content: "“";
+    color: var(--blue);
+    font-family: sans-serif;
+}
+
+blockquote p:last-of-type::after {
+    content: "”";
+}
+
+blockquote.pull p:first-of-type::before {
+    margin-left: -1.25ch;
+}
+
+blockquote.pull p:first-of-type::before {
+    font-size: 80px;
+    position: absolute;
+    left: 0;
+    top: -.25ch;
+}
+
+blockquote.pull {
+    margin-left: 64px;
+    border-left: 2px solid var(--lightGrey);
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-style: italic;
+
+    position: relative;
+    padding-left: 1ch;
+
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: sans-serif;
+}
+
+blockquote cite::before {
+    content: "— ";
+}
+
+blockquote cite {
+    font-style: normal;
+    font-weight: normal;
+    font-size: initial;
+}
+
+/* Tim Berners Lee Block Quote End */
+.article-foundation a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.article-foundation a:hover,
+.article-foundation a:active,
+.article-foundation a:focus {
+    color: var(--blue);
+}
+
+.article-foundation a:focus {
+    outline: 1px dotted;
+}
+
+/******************************* articles.html file style's end */
+/******************************* thank_you.html file style's start */
+
+.thank-you-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    box-shadow: 0 0px 6px 2px rgb(0 0 0 / 20%);
+    text-align: center;
+    border-radius: 5px;
+    color: var(--grey);
+    padding: 50px;
+    margin-top: 200px;
+}
+
+.popup img {
+    width: 420px;
+    height: 286px;
+}
+
+.popup p {
+    padding-bottom: 20px;
+}
+
+/******************************* thank_you.html file style's end */
+
+/* MEDIA QURIES START */
+@media screen and (max-width: 1024px) {
+
+    #work {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .activity-tracker,
+    .personal-website {
+        align-self: center;
+    }
+
+    .article-0,
+    .article-foundation,
+    .inner-content {
+        width: 864px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero-left {
+        margin-left: -94px;
+    }
+
+    .build-design,
+    .write-occasionally {
+        width: 400px;
+        height: 300px;
+    }
+
+    #building {
+        gap: 4em;
+    }
+
+
+    .article-0,
+    .article-foundation,
+    .inner-content {
+        width: 864px;
+    }
+
+    #user-Name {
+        width: 356px;
+    }
+
+    #user-email {
+        width: 356px
+    }
+
+    #message-col {
+        width: 356px
+    }
+
+    #work {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .activity-tracker,
+    .personal-website {
+        align-self: center;
+    }
+
+    .developers-work {
+        margin-top: 32%;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .hero-right img {
+        left: 438px;
+    }
+
+    .article-0,
+    .article-foundation,
+    .inner-content {
+        width: 862px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: var(--navy);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        top: 80px;
+        box-shadow: 0 6px 6px -2px rgba(0, 0, 0, .2);
+    }
+
+    .menu li + li {
+        margin-top: 12px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /*DOWNLOAD RESUME BTN*/
+    #download-btn {
+        display: inline-block;
+        color: var(--white);
+    }
+
+    .nav .btn.hamburger {
+        display: block;
+    }
+
+    .nav .container {
+        width: 100%;
+    }
+
+    .nav .navbar {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav .navbar.hidden {
+        display: block;
+    }
+
+    .hero-right img {
+        left: 418px;
+        top: 204px;
+    }
+
+    section.hero {
+        margin-top: 118px;
+    }
+
+    #building {
+        gap: 0em;
+    }
+
+    .inner-content {
+        width: 796px;
+    }
+
+    .article-0,
+    .article-foundation {
+        width: 700px;
+    }
+
+    section.hero {
+        flex-direction: column;
+    }
+
+    .hero-right img {
+        left: 210px;
+        top: 620px;
+    }
+
+    .hero-right {
+        padding-bottom: 274px;
+    }
+
+
+    #building {
+        flex-direction: column;
+        gap: 4em;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 2.5em;
+    }
+
+    #message-col {
+        width: 380px;
+    }
+
+    .inner-content {
+        width: 400px;
+        height: 612px;
+    }
+
+    #user-message {
+        min-height: 80px;
+    }
+
+    hr {
+        margin-left: 54px;
+        margin-right: 52px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    section.hero {
+        flex-direction: column;
+    }
+
+    .hero-right img {
+        left: 210px;
+        top: 620px;
+    }
+
+    .hero-right {
+        padding-bottom: 274px;
+    }
+
+
+    #building {
+        flex-direction: column;
+        gap: 4em;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 2.5em;
+    }
+
+    #message-col {
+        width: 380px;
+    }
+
+    .inner-content {
+        width: 400px;
+        height: 612px;
+    }
+
+    .article-0,
+    .article-foundation {
+        width: 400px;
+    }
+
+    #user-message {
+        min-height: 80px;
+    }
+
+    hr {
+        margin-left: 54px;
+        margin-right: 52px;
+    }
+
+}
+
+@media screen and (max-width: 625px) {
+    .hero-left {
+        margin-left: -132px;
+    }
+
+    .hero-right img {
+        left: 160px;
+        top: 596px;
+    }
+
+    .cd {
+        flex-direction: column;
+        gap: 0em;
+        padding-top: 0px;
+    }
+
+    .my-work {
+        padding-top: 48px;
+    }
+
+    .popup img {
+        width: 200px;
+        height: 140px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .hero-right img {
+        left: 78px;
+    }
+
+    .activity-tracker img,
+    .personal-website img {
+        height: 342px;
+        width: 396px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    .hero-right img {
+        left: 64px;
+        top: 678px;
+    }
+
+    .activity-tracker img,
+    .personal-website img {
+        height: 342px;
+        width: 396px;
+    }
+
+    .popup {
+        margin-top: 158px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .developers-work {
+        margin-top: 42%;
+    }
+
+    .hero-left h1 {
+        padding-top: 20px;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .hero-right img {
+        left: 20px;
+        top: 602px;
+    }
+
+    .build-design,
+    .write-occasionally {
+        width: 320px;
+        height: 300px;
+    }
+
+    .inner-content {
+        width: 320px;
+    }
+
+    #user-email,
+    #user-Name,
+    #message-col {
+        width: 300px;
+    }
+}
