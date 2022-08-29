@@ -425,9 +425,6 @@ a {
     cursor: pointer;
 }
 
-.say-hello {
-    padding-top: 80px;
-}
 
 .say-hello h2 {
     font-weight: 900;
@@ -435,6 +432,8 @@ a {
 
 .my-work {
     padding-top: 126px;
+    display: grid;
+    gap: 30px;
 }
 
 .site-email {
@@ -933,6 +932,10 @@ blockquote cite {
         margin-right: 52px;
     }
 
+    .contact-developer {
+        height: 450px;
+        padding-top: 40px;
+    }
 }
 
 @media screen and (max-width: 625px) {
