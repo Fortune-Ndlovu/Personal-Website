@@ -304,25 +304,39 @@
                                 <div class="col" id="name-col">
                                     <label for="user-Name" accesskey="N">Your Name</label>
                                     <input name="user-Name" type="text" id="user-Name" class="form-control" required
-                                        placeholder="Enter your name">
+                                        aria-required="true" placeholder="Enter your name">
                                     <input type="hidden" name="_next"
                                         value="https://fortunendlovu.com/pages/thank_you.html">
                                     <input type="hidden" name="_subject" value="New submission WOoooOOO!">
                                     <input type="hidden" name="_captcha" value="false">
+
                                 </div>
                                 <div class="col" id="email-col">
                                     <label for="user-email" accesskey="E">Email Address</label>
                                     <input name="user-email" type="email" id="user-email" class="form-control" required
-                                        placeholder="you@example.com">
+                                        aria-required="true" placeholder="you@example.com">
                                 </div>
                             </div>
                         </div>
                         <div class="secondRow">
-                            <div class="form-group" id="message-col">
-                                <label for="user-message" accesskey="M">Your Message</label>
-                                <textarea name="user-message" class="form-control" id="user-message" rows="3" required
-                                    placeholder="Hi Fortune, we would kindly appreciate your JavaScript, UX & UI expertise for our product at Company X. How soon can you hop on?"
-                                    style="height: 60px;"></textarea>
+                            <div class="row">
+                                <div class="col" class="form-group" id="plan">
+                                    <label for="plan" accesskey="P">Plan (optional)</label>
+                                    <select id="dropdown" class="form-select" aria-label="Optional website plan request"
+                                        id="plan">
+                                        <option value=""></option>
+                                        <option value="Basic">Basic</option>
+                                        <option value="Standard">Standard</option>
+                                        <option value="Premium">Premium</option>
+                                    </select>
+                                </div>
+                                <div class="col" class="form-group" id="message-col">
+                                    <label for="user-message" accesskey="M">Your Message</label>
+                                    <textarea name="user-message" class="form-control" id="user-message" rows="3"
+                                        required aria-required="true"
+                                        placeholder="Hi Fortune, we would kindly appreciate your JavaScript, UX & UI expertise for our product at Company X. How soon can you hop on?"
+                                        style="height: 60px;"></textarea>
+                                </div>
                             </div>
                         </div>
                         <div class="form-btn">
@@ -343,7 +357,7 @@
         <!-- THE FOOTER CONTENT START -->
         <footer class="footer">
             <section class="contact-developer">
-                <div class="cd">
+                <div class="developer-socials">
                     <div class="say-hello">
                         <h2>Say Hello</h2><br>
                         <a title="hello@fortunendlovu.com" target="_blank" class="site-email"
