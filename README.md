@@ -12,7 +12,7 @@ The form works, with the help of formsubmit.co as the action provided with my si
 I am using one style sheet for now because the website is only in its first draft. The overall styles are pretty simple from the navigation to media queries. What is interesting is that I am using CSS variables for my colors. I will be adding more custom variables as the site progresses. 
 
 ## JavaScript
-The only time I used JavaScript in this instance was for the activation of the hamburger menu. The code is simplified and concise.  
+The only time I used JavaScript in this instance was for the activation of the hamburger menu, the image slider including the pricing per build buttons. The code is simplified and concise. 
 
 ## Accessibility 
 The website is accessible I made various tests before launching. I followed the WCAG guidelines from the very beginning of my project. However, there is still room for improvement especially as the site progresses.
