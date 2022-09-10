@@ -752,19 +752,22 @@ hr {
     margin-top: 16%;
 }
 
-#work {
+#work,
+#work-2 {
     display: flex;
     justify-content: center;
     gap: 5em;
     margin-top: 6%;
 }
 
-#work a {
+#work a,
+#work-2 a {
     margin-top: 20px;
 }
 
 .activity-brief-info,
-.personal-brief-info {
+.personal-brief-info,
+.acme-brief-info {
     background-color: var(--grey);
     color: var(--white);
     text-align: center;
@@ -773,7 +776,8 @@ hr {
 
 /*Space between btn's*/
 #activity-live-btn,
-#personal-live-btn {
+#personal-live-btn,
+#acme-live-btn {
     margin-right: 40px;
 }
 
@@ -1199,7 +1203,7 @@ blockquote cite {
     }
 
     .pricing-inner-content-heading h2 {
-        color: #5a5a5a;
+        color: var(--grey);
     }
 
     /* index.html start*/
@@ -1694,7 +1698,8 @@ blockquote cite {
     }
 
     .activity-tracker img,
-    .personal-website img {
+    .personal-website img,
+    .acme-homes-article img {
         height: 342px;
         width: 396px;
     }
@@ -1786,7 +1791,8 @@ blockquote cite {
     }
 
     .activity-tracker img,
-    .personal-website img {
+    .personal-website img,
+    .acme-homes-article img {
         height: 342px;
         width: 358px;
     }
@@ -1829,7 +1835,8 @@ blockquote cite {
     }
 
     .activity-tracker img,
-    .personal-website img {
+    .personal-website img,
+    .acme-homes-article img {
         height: 342px;
         width: 342px;
     }
@@ -1902,13 +1909,15 @@ blockquote cite {
     }
 
     .activity-tracker img,
-    .personal-website img {
+    .personal-website img,
+    .acme-homes-article img {
         height: 250px;
         width: 250px;
     }
 
     .activity-brief-info,
-    .personal-brief-info {
+    .personal-brief-info,
+    .acme-brief-info {
         width: 250px;
     }
 
