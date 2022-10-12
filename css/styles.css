@@ -2,8 +2,8 @@
     --white: #fff;
     --navy: #1D3152;
     --blue: #4B7BD0;
-    --green: #60a035;
-    --orange: #C46723;
+    --purple: #3d155f;
+    --limeGreen: #a6d136;
     --grey: #5a5a5a;
     --lightGrey: #cecece;
 }
@@ -169,7 +169,6 @@ footer .socials a {
 }
 
 /* HERO SHAPES START */
-
 .home-shapes span.shape1 {
     position: absolute;
     left: 1269px;
@@ -255,8 +254,8 @@ section.work-content,
 }
 
 #building {
-    gap: 5em;
     margin-top: 8%;
+    text-align: center;
 }
 
 /* "I build and design often" */
@@ -264,7 +263,8 @@ section.work-content,
     width: 500px;
     height: 400px;
     color: var(--white);
-    background-color: var(--green);
+    background-color: var(--purple);
+    border-right: 1px solid var(--blue);
 }
 
 .build h2,
@@ -279,8 +279,13 @@ section.work-content,
 
 .build #work-btn,
 .write #articles-btn,
-form #shoot-form {
-    padding: 10px 40px 10px 50px;
+form #shoot-form,
+#work a,
+#work-2 a {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #work-btn:hover,
@@ -294,7 +299,8 @@ form #shoot-form {
     width: 500px;
     height: 400px;
     color: var(--white);
-    background-color: var(--orange);
+    background-color: var(--purple);
+    border-left: 1px solid var(--blue);
 }
 
 #work-btn,
@@ -414,6 +420,29 @@ section.slideshow-section {
     }
 }
 
+section.slideshow-section {
+    background-image: url(../img/coding-man.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-attachment: fixed;
+    min-height: 250px;
+}
+
+div.slideshow-block {
+    background-color: #ffffff94;
+    /* padding: 40px; */
+    /* background-size: 75% 50%; */
+    margin-left: 183px;
+    margin-right: 183px;
+    /* display: list-item; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
 /* SLIDESHOW END */
 /* PRICING PER BUILD SECTION START*/
 .pricing-section {
@@ -431,7 +460,7 @@ section.slideshow-section {
     margin: auto;
     font-weight: 900;
     color: var(--white);
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 div.pricing-block {
@@ -458,56 +487,62 @@ div.pricing-block {
     display: flex;
     padding-top: 50px;
     justify-content: center;
-    gap: 120px;
+    gap: 84px;
     width: 1080px;
     background-color: var(--blue);
-    height: 660px;
+    height: 542px;
     text-align: center;
 }
 
 .basic {
     background-color: var(--white);
-    height: 400px;
-    width: 220px;
-    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.25);
+    height: 410px;
+    width: 250px;
+}
+
+.basic-list,
+.standard-list,
+.premium-list {
+    padding-top: 20px;
 }
 
 .basic-heading {
-    background-color: var(--white);
+    background-color: #1d3152;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90px;
+    color: #fff;
 }
 
 .standard {
     background-color: var(--white);
-    height: 480px;
-    width: 220px;
-    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.25);
+    height: 410px;
+    width: 250px;
 }
 
 .standard-heading {
-    background: rgba(68, 209, 65, 0.5);
+    background: #1d3152;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90px;
+    color: #fff;
 }
 
 .premium {
     background-color: var(--white);
-    height: 540px;
-    width: 220px;
-    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.25);
+    height: 410px;
+    width: 250px;
 }
 
 .premium-heading {
-    background: rgba(209, 96, 156, 0.5);
+    background: #1d3152;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90px;
+    color: #fff;
 }
 
 .pricing-inner-content a:hover {
@@ -529,7 +564,7 @@ section#send-message {
 
 /*Send me a message*/
 .inner-content {
-    background-color: var(--grey);
+    background-color: var(--navy);
     height: 500px;
     width: 1080px;
     color: var(--white);
@@ -752,6 +787,10 @@ hr {
     margin-top: 16%;
 }
 
+section.second-section {
+    margin-top: 10%;
+}
+
 #work,
 #work-2 {
     display: flex;
@@ -768,7 +807,7 @@ hr {
 .activity-brief-info,
 .personal-brief-info,
 .acme-brief-info {
-    background-color: var(--grey);
+    background-color: #3B3531;
     color: var(--white);
     text-align: center;
     padding: 26px 0px 26px 0px;
@@ -853,8 +892,11 @@ hr {
 }
 
 #return-btn {
-    padding-right: 40px;
     text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #return-btn:hover {
@@ -922,6 +964,13 @@ blockquote cite {
 
 .article-foundation a:focus {
     outline: 1px dotted;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }
 
 /******************************* articles.html file style's end */
@@ -1226,15 +1275,17 @@ blockquote cite {
     /* write.html start */
     /* index.html start */
     .article-0,
-    .article-foundation,
-    .pricing-inner-content,
-    .inner-content {
+    .article-foundation {
         width: 864px;
     }
 
     /* write.html end */
     .pricing-inner-content {
         gap: 50px;
+    }
+
+    .pricing-inner-content-heading h2 {
+        padding-top: 12px;
     }
 
     /* HERO IMAGE */
@@ -1285,10 +1336,6 @@ blockquote cite {
     .write-occasionally {
         width: 400px;
         height: 300px;
-    }
-
-    #building {
-        gap: 4em;
     }
 
     /* index.html end */
@@ -1441,12 +1488,6 @@ blockquote cite {
         width: 0px;
     }
 
-    /* index.html end */
-    /* build.html start */
-    #building {
-        gap: 0em;
-    }
-
     /* build.html end *
     /* write.html start*/
     /* article.html start*/
@@ -1455,6 +1496,18 @@ blockquote cite {
         width: 700px;
     }
 
+
+    .build-design {
+        border-right: none;
+        border-bottom: 1px solid #4b7bd0;
+    }
+
+    .write-occasionally {
+        border-left: none;
+        border-top: 1px solid #4b7bd0;
+    }
+
+
     /* index.html start */
     div.hero {
         flex-direction: column;
@@ -1462,7 +1515,6 @@ blockquote cite {
 
     #building {
         flex-direction: column;
-        gap: 4em;
     }
 
     .row {
@@ -1519,14 +1571,14 @@ blockquote cite {
         position: absolute;
         left: 50px;
         right: 50px;
-
+        padding-top: 44px;
     }
 
     .pricing-inner-content {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 1740px;
+        height: 1505px;
     }
 
     .basic,
@@ -1549,6 +1601,10 @@ blockquote cite {
 }
 
 @media screen and (max-width: 760px) {
+    div.slideshow-block {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
     /* index.html start */
     section.hero {
@@ -1562,7 +1618,16 @@ blockquote cite {
 
     #building {
         flex-direction: column;
-        gap: 4em;
+    }
+
+    .build-design {
+        border-right: none;
+        border-bottom: 1px solid #4b7bd0;
+    }
+
+    .write-occasionally {
+        border-left: none;
+        border-top: 1px solid #4b7bd0;
     }
 
     .row {
@@ -1633,7 +1698,10 @@ blockquote cite {
     }
 
     /* index.html end */
-
+    /* build.html */
+    section.second-section {
+        margin-top: 12%;
+    }
 }
 
 @media screen and (max-width: 625px) {
@@ -1717,6 +1785,10 @@ blockquote cite {
     }
 
     /* index.html end */
+    /* build.html */
+    section.second-section {
+        margin-top: 16%;
+    }
 }
 
 @media screen and (max-width: 460px) {
@@ -1795,6 +1867,10 @@ blockquote cite {
     .acme-homes-article img {
         height: 342px;
         width: 358px;
+    }
+
+    section.second-section {
+        margin-top: 22%;
     }
 
     /* build.html end */
