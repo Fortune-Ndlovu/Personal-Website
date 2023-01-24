@@ -824,7 +824,8 @@ ul.things-built-list a {
   text-decoration: none;
 }
 
-li.activity-list-item {
+li.activity-list-item,
+li.personal-list-item {
   margin-bottom: 100px;
 }
 
@@ -835,12 +836,14 @@ section.things-built-section {
 }
 
 .activity-tracker,
-.personal-website {
+.personal-website,
+.acme-homes {
   display: flex;
   justify-content: center;
 }
 
-ul.activity-objects-used {
+ul.activity-objects-used,
+ul.acme-objects-used {
   list-style: none;
   text-decoration: none;
   display: flex;
@@ -865,6 +868,7 @@ ul.personal-objects-used {
 }
 
 p.activity-mini-para,
+p.acme-mini-para,
 p.personal-mini-para {
   font-weight: bold;
   font-size: larger;
@@ -872,6 +876,7 @@ p.personal-mini-para {
 }
 
 .activity-para,
+.acme-para,
 .personal-para {
   background-color: var(--navy);
   /* padding: 20px; */
@@ -882,6 +887,7 @@ p.personal-mini-para {
 }
 
 h2.activity-heading,
+h2.acme-heading,
 h2.personal-heading {
   font-weight: bolder;
   padding-bottom: 20px;
@@ -898,13 +904,18 @@ ul.personal-objects-used,
 p.activity-mini-para,
 h2.activity-heading,
 ul.activity-objects-used,
-.activity-btns {
+.activity-btns,
+p.acme-mini-para,
+h2.acme-heading,
+ul.acme-objects-used,
+.acme-btns {
   margin-right: -30px;
 }
 ul.personal-objects-used {
   padding-left: 0px;
 }
-.activity-brief-info {
+.activity-brief-info,
+.acme-brief-info {
   background-color: rgba(211, 211, 211, 0);
   color: var(--white);
   text-align: right;
@@ -1710,6 +1721,7 @@ blockquote cite {
   }
 
   .activity-brief-info,
+  .acme-brief-info,
   .personal-brief-info {
     background-color: #1c293bcf;
     color: var(--white);
@@ -1732,7 +1744,11 @@ blockquote cite {
   p.activity-mini-para,
   h2.activity-heading,
   ul.activity-objects-used,
-  .activity-btns {
+  .activity-btns,
+  p.acme-mini-para,
+  h2.acme-heading,
+  ul.acme-objects-used,
+  .acme-btns {
     margin-right: 0px;
   }
 
@@ -1744,6 +1760,7 @@ blockquote cite {
   }
 
   h2.activity-heading,
+  h2.acme-heading,
   h2.personal-heading {
     font-weight: bolder;
     padding-bottom: 0px;
@@ -1751,6 +1768,7 @@ blockquote cite {
   }
 
   .activity-para,
+  .acme-para,
   .personal-para {
     background-color: #ffffff00;
     /* padding: 20px; */
@@ -1762,6 +1780,7 @@ blockquote cite {
   }
 
   ul.activity-objects-used,
+  ul.acme-objects-used,
   ul.personal-objects-used {
     display: flex;
     justify-content: center;
@@ -1773,12 +1792,13 @@ blockquote cite {
 
   .activity-tracker img,
   .personal-website img,
-  .acme-homes-article img {
+  .acme-homes img {
     height: 428px;
     width: 500px;
   }
 
   ul.activity-objects-used,
+  ul.acme-objects-used,
   ul.personal-objects-used {
     color: #4b7bd0;
   }
@@ -1947,7 +1967,7 @@ blockquote cite {
 
   .activity-tracker img,
   .personal-website img,
-  .acme-homes-article img {
+  .acme-homes img {
     height: 342px;
     width: 396px;
   }
@@ -1966,21 +1986,28 @@ blockquote cite {
 
   /* index.html end */
   /*updates build.html */
+
   section.second-section {
     margin-top: 16%;
   }
 
   .activity-tracker img,
   .personal-website img,
-  .acme-homes-article img {
+  .acme-homes img {
     height: 428px;
     width: 500px;
+  }
+
+  .acme-homes img {
+    height: auto;
+    width: -webkit-fill-available;
   }
 }
 
 @media screen and (max-width: 460px) {
   /* build.html start */
   .activity-tracker img,
+  .acme-tracker img,
   .personal-website img {
     height: 342px;
     width: 396px;
@@ -1993,15 +2020,18 @@ blockquote cite {
   }
 
   .activity-tracker img,
+  .acme-tracker img,
   .personal-website img {
     height: 428px;
     width: 500px;
   }
   .activity-para,
+  .acme-para,
   .personal-para {
     margin-right: 75px;
   }
   .activity-para,
+  .acme-para,
   .personal-para {
     padding-right: 10px;
   }
@@ -2011,23 +2041,27 @@ blockquote cite {
   }
 
   .activity-tracker img,
+  .acme-tracker img,
   .personal-website img {
     height: 350px;
     width: 400px;
   }
 
   .activity-brief-info,
+  .acme-brief-info,
   .personal-brief-info {
     width: 400px;
     height: 350px;
   }
 
   p.activity-mini-para,
+  p.acme-mini-para,
   p.personal-mini-para {
     display: none;
   }
 
   h2.activity-heading,
+  h2.acme-heading,
   h2.personal-heading {
     font-weight: bolder;
     padding-bottom: 0px;
@@ -2037,12 +2071,14 @@ blockquote cite {
   }
 
   .activity-para,
+  .acme-para,
   .personal-para {
     padding-right: 10px;
     text-align: initial;
   }
 
   ul.activity-objects-used,
+  ul.acme-objects-used,
   ul.personal-objects-used {
     display: none;
   }
@@ -2101,7 +2137,7 @@ blockquote cite {
 
   .activity-tracker img,
   .personal-website img,
-  .acme-homes-article img {
+  .acme-homes img {
     height: 342px;
     width: 358px;
   }
@@ -2147,7 +2183,7 @@ blockquote cite {
 
   .activity-tracker img,
   .personal-website img,
-  .acme-homes-article img {
+  .acme-homes img {
     height: 342px;
     width: 342px;
   }
@@ -2220,7 +2256,7 @@ blockquote cite {
 
   .activity-tracker img,
   .personal-website img,
-  .acme-homes-article img {
+  .acme-homes img {
     height: 250px;
     width: 250px;
   }
