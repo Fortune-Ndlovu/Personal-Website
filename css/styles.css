@@ -1713,6 +1713,7 @@ blockquote cite {
     /* margin: 0px; */
     font-size: 20px;
     text-align: center;
+    margin-right: 0px;
   }
 
   ul.activity-objects-used {
@@ -1722,6 +1723,13 @@ blockquote cite {
     align-content: end;
     padding: 0px 0px 30px;
     margin: 0px;
+  }
+
+  .activity-tracker img,
+  .personal-website img,
+  .acme-homes-article img {
+    height: 428px;
+    width: 500px;
   }
   /*updates build.html end */
 }
@@ -1906,9 +1914,16 @@ blockquote cite {
   }
 
   /* index.html end */
-  /* build.html */
+  /*updates build.html */
   section.second-section {
     margin-top: 16%;
+  }
+
+  .activity-tracker img,
+  .personal-website img,
+  .acme-homes-article img {
+    height: 428px;
+    width: 500px;
   }
 }
 
@@ -1924,6 +1939,67 @@ blockquote cite {
   .developers-work h2,
   .developers-work p {
     padding: 5px;
+  }
+
+  .activity-tracker img,
+  .personal-website img {
+    height: 428px;
+    width: 500px;
+  }
+  .activity-para {
+    margin-right: 75px;
+  }
+  .activity-para {
+    padding-right: 10px;
+  }
+
+  .image-link {
+    width: 400px;
+  }
+
+  .activity-tracker img,
+  .personal-website img {
+    height: 350px;
+    width: 400px;
+  }
+
+  .activity-brief-info {
+    /* background-color: #1c293bcf;
+    color: var(--white);
+    text-align: center;
+    align-self: center; */
+    /* margin: -8px 30px -2px -55px; */
+    /* z-index: 1;
+    position: absolute;
+    margin-top: -4px; */
+    /* margin-left: 168px; */
+    /* margin-right: 166px; */
+    /* flex-direction: column; */
+    width: 400px;
+    height: 350px;
+    /* display: grid;
+    align-content: center; */
+  }
+
+  p.activity-mini-para {
+    display: none;
+  }
+
+  h2.activity-heading {
+    font-weight: bolder;
+    padding-bottom: 0px;
+    color: #ffffff;
+    margin-bottom: -20px;
+    font-family: system-ui;
+  }
+
+  .activity-para {
+    padding-right: 10px;
+    text-align: initial;
+  }
+
+  ul.activity-objects-used {
+    display: none;
   }
 
   /* build.html end */
