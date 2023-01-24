@@ -816,6 +816,12 @@ section.second-section {
 /* changes start */
 ul.things-built-list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul.things-built-list a {
+  text-decoration: none;
 }
 
 li.activity-list-item {
@@ -873,20 +879,19 @@ ul.activity-objects-used,
   margin-right: -30px;
 }
 
-.activity-brief-info,
-.personal-brief-info,
-.acme-brief-info {
+.activity-brief-info {
   background-color: rgba(211, 211, 211, 0);
   color: var(--white);
   text-align: right;
   align-self: center;
-  margin: -66px;
-  padding: 33px;
+  margin: -8px 30px -2px -40px;
   z-index: 1;
 }
 
 .image-link {
   background: #1d3152;
+  width: 100%;
+  height: 100%;
 }
 
 .image-link img {
@@ -1661,6 +1666,64 @@ blockquote cite {
   }
 
   /* index.html end */
+
+  /*updates build.html start*/
+  .image-link {
+    background: #1d3152;
+    width: 500px;
+    height: 100%;
+  }
+
+  .activity-brief-info {
+    background-color: #1c293bcf;
+    color: var(--white);
+    text-align: center;
+    align-self: center;
+    /* margin: -8px 30px -2px -55px; */
+    z-index: 1;
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 168px;
+    margin-right: 166px;
+    /* flex-direction: column; */
+    width: 500px;
+    height: 428px;
+
+    display: grid;
+    align-content: center;
+  }
+
+  p.activity-mini-para,
+  h2.activity-heading,
+  ul.activity-objects-used,
+  .activity-btns {
+    margin-right: 0px;
+  }
+
+  h2.activity-heading {
+    font-weight: bolder;
+    padding-bottom: 0px;
+    color: #f0f2f5;
+  }
+
+  .activity-para {
+    background-color: #ffffff00;
+    /* padding: 20px; */
+    padding: 20px 75px 20px;
+    /* margin: 0px; */
+    font-size: 20px;
+    text-align: center;
+  }
+
+  ul.activity-objects-used {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: end;
+    padding: 0px 0px 30px;
+    margin: 0px;
+  }
+  /*updates build.html end */
 }
 
 @media screen and (max-width: 760px) {
@@ -1721,6 +1784,7 @@ blockquote cite {
   }
 
   /* index.html end */
+
   /* write.html start */
   .article-0 {
     width: 400px;
