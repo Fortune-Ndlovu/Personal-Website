@@ -270,7 +270,7 @@ section.work-content,
 
 .btn-danger:hover {
   background-color: var(--navy);
-  border: 3px solid var(--navy); 
+  border: 3px solid var(--navy);
 }
 
 /* "I build and design often" */
@@ -813,14 +813,92 @@ section.second-section {
   margin-top: 20px;
 }
 
+/* changes start */
+ul.things-built-list {
+  list-style: none;
+}
+
+li.activity-list-item {
+  margin-bottom: 100px;
+}
+
+section.things-built-section {
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 1000px;
+}
+
+.activity-tracker {
+  display: flex;
+  justify-content: center;
+}
+
+ul.activity-objects-used {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: bolder;
+  padding-bottom: 30px;
+}
+
+p.activity-mini-para {
+  font-weight: bold;
+  font-size: larger;
+  color: var(--blue);
+}
+
+.activity-para {
+  background-color: var(--navy);
+  /* padding: 20px; */
+  padding: 50px 75px 50px;
+
+  margin: 10px -30px 10px;
+  font-size: 20px;
+}
+
+h2.activity-heading {
+  font-weight: bolder;
+  padding-bottom: 20px;
+  color: var(--navy);
+}
+
+p.activity-mini-para,
+h2.activity-heading,
+ul.activity-objects-used,
+.activity-btns {
+  margin-right: -30px;
+}
+
 .activity-brief-info,
 .personal-brief-info,
 .acme-brief-info {
-  background-color: #3b3531;
+  background-color: rgba(211, 211, 211, 0);
   color: var(--white);
-  text-align: center;
-  padding: 26px 0px 26px 0px;
+  text-align: right;
+  align-self: center;
+  margin: -66px;
+  padding: 33px;
+  z-index: 1;
 }
+
+.image-link {
+  background: #1d3152;
+}
+
+.image-link img {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.image-link:hover img {
+  opacity: 0.5;
+}
+
+/* changes end */
 
 /*Space between btn's*/
 #activity-live-btn,
