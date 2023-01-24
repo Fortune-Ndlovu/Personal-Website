@@ -153,6 +153,7 @@ footer .socials a {
 .nav .navbar .btn {
   margin: 0 auto;
   text-align: center;
+  border-radius: 10px;
 }
 
 .home-intro {
@@ -209,6 +210,7 @@ footer .socials a {
 .hero-left {
   background-color: var(--blue);
   flex: 2.5;
+  border-radius: 0px 50px 0px 0px;
 }
 
 .hero-right {
@@ -220,6 +222,7 @@ div.hero {
   display: flex;
   margin-top: 108px;
   height: 500px;
+  background-color: #1d3152;
 }
 
 h1 {
@@ -266,6 +269,7 @@ section.work-content,
   padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 10px;
 }
 
 .btn-danger:hover {
@@ -280,6 +284,7 @@ section.work-content,
   color: var(--white);
   background-color: var(--purple);
   border-right: 1px solid var(--blue);
+  border-radius: 10px 0px 0px 10px;
 }
 
 .build h2,
@@ -316,11 +321,13 @@ form #shoot-form,
   color: var(--white);
   background-color: var(--purple);
   border-left: 1px solid var(--blue);
+  border-radius: 0px 10px 10px 0px;
 }
 
 #work-btn,
 #articles-btn {
   margin-top: 8%;
+  border-radius: 10px;
 }
 
 /* SLIDESHOW START */
@@ -445,13 +452,11 @@ section.slideshow-section {
 
 div.slideshow-block {
   background-color: #ffffff94;
-  /* padding: 40px; */
-  /* background-size: 75% 50%; */
   margin-left: 183px;
   margin-right: 183px;
-  /* display: list-item; */
   padding-top: 40px;
   padding-bottom: 40px;
+  border-radius: 10px;
 }
 
 /* SLIDESHOW END */
@@ -465,6 +470,7 @@ div.slideshow-block {
   background-color: var(--blue);
   width: 1080px;
   display: inline-flex;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .pricing-inner-content-heading h2 {
@@ -503,12 +509,20 @@ div.pricing-block {
   background-color: var(--blue);
   height: 542px;
   text-align: center;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .basic {
   background-color: var(--white);
   height: 410px;
   width: 250px;
+  border-radius: 10px;
+}
+
+a#requestbasic,
+a#requeststandard,
+a#requestpremium {
+  border-radius: 10px;
 }
 
 .basic-list,
@@ -524,12 +538,14 @@ div.pricing-block {
   align-items: center;
   height: 90px;
   color: #fff;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .standard {
   background-color: var(--white);
   height: 410px;
   width: 250px;
+  border-radius: 10px;
 }
 
 .standard-heading {
@@ -539,12 +555,14 @@ div.pricing-block {
   align-items: center;
   height: 90px;
   color: #fff;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .premium {
   background-color: var(--white);
   height: 410px;
   width: 250px;
+  border-radius: 10px;
 }
 
 .premium-heading {
@@ -554,6 +572,7 @@ div.pricing-block {
   align-items: center;
   height: 90px;
   color: #fff;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .pricing-inner-content a:hover {
@@ -579,8 +598,11 @@ section#send-message {
   height: 500px;
   width: 1080px;
   color: var(--white);
+  border-radius: 10px;
 }
-
+button#shoot-form {
+  border-radius: 10px;
+}
 p {
   margin-bottom: 0;
 }
@@ -704,6 +726,7 @@ label {
 .form-btn {
   text-align: center;
   padding-top: 30px;
+  border-radius: 10px;
 }
 
 #shoot-form:hover {
@@ -764,6 +787,10 @@ a {
   font-size: 38px;
   cursor: pointer;
   color: var(--white);
+}
+
+a#resume-btn {
+  border-radius: 10px;
 }
 
 hr {
@@ -884,6 +911,7 @@ p.personal-mini-para {
 
   margin: 10px -30px 10px;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 h2.activity-heading,
@@ -938,12 +966,14 @@ ul.personal-objects-used {
   background: #1d3152;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .image-link img {
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  border-radius: 10px;
 }
 .image-link:hover img {
   opacity: 0.5;
@@ -956,6 +986,13 @@ ul.personal-objects-used {
 #personal-live-btn,
 #acme-live-btn {
   margin-right: 40px;
+  border-radius: 10px;
+}
+
+a#activity-code-btn,
+a#personal-code-btn,
+a#acme-code-btn {
+  border-radius: 10px;
 }
 
 /******************************* build.html file style's END */
@@ -1031,6 +1068,7 @@ ul.personal-objects-used {
   padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 10px;
 }
 
 #return-btn:hover {
@@ -1736,7 +1774,7 @@ blockquote cite {
     /* flex-direction: column; */
     width: 500px;
     height: 428px;
-
+    border-radius: 10px;
     display: grid;
     align-content: center;
   }
@@ -1999,8 +2037,10 @@ blockquote cite {
   }
 
   .acme-homes img {
-    height: auto;
-    width: -webkit-fill-available;
+    /* height: auto;
+    width: -webkit-fill-available; */
+    height: 350px;
+    width: 400px;
   }
 }
 
@@ -2125,6 +2165,10 @@ blockquote cite {
   }
 
   /* HERO SHAPES END */
+  .developers-work {
+    margin-top: 40%;
+    margin-bottom: -70px;
+  }
   /* index.html end */
 }
 
