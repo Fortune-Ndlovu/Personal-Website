@@ -834,7 +834,8 @@ section.things-built-section {
   max-width: 1000px;
 }
 
-.activity-tracker {
+.activity-tracker,
+.personal-website {
   display: flex;
   justify-content: center;
 }
@@ -845,19 +846,33 @@ ul.activity-objects-used {
   display: flex;
   justify-content: end;
   gap: 40px;
-  color: var(--blue);
+  color: var(--navy);
   font-size: 18px;
   font-weight: bolder;
   padding-bottom: 30px;
 }
 
-p.activity-mini-para {
+ul.personal-objects-used {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  gap: 40px;
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: bolder;
+  padding-bottom: 30px;
+}
+
+p.activity-mini-para,
+p.personal-mini-para {
   font-weight: bold;
   font-size: larger;
   color: var(--blue);
 }
 
-.activity-para {
+.activity-para,
+.personal-para {
   background-color: var(--navy);
   /* padding: 20px; */
   padding: 50px 75px 50px;
@@ -866,10 +881,18 @@ p.activity-mini-para {
   font-size: 20px;
 }
 
-h2.activity-heading {
+h2.activity-heading,
+h2.personal-heading {
   font-weight: bolder;
   padding-bottom: 20px;
   color: var(--navy);
+}
+
+p.personal-mini-para,
+h2.personal-heading,
+ul.personal-objects-used,
+.personal-btns {
+  margin-left: -30px;
 }
 
 p.activity-mini-para,
@@ -878,7 +901,9 @@ ul.activity-objects-used,
 .activity-btns {
   margin-right: -30px;
 }
-
+ul.personal-objects-used {
+  padding-left: 0px;
+}
 .activity-brief-info {
   background-color: rgba(211, 211, 211, 0);
   color: var(--white);
@@ -886,6 +911,16 @@ ul.activity-objects-used,
   align-self: center;
   margin: -8px 30px -2px -40px;
   z-index: 1;
+}
+
+.personal-brief-info {
+  background-color: rgba(211, 211, 211, 0);
+  color: var(--white);
+  text-align: left;
+  align-self: center;
+  margin: -8px -30px -2px -40px;
+  z-index: 1;
+  margin-left: 20px;
 }
 
 .image-link {
@@ -1674,7 +1709,8 @@ blockquote cite {
     height: 100%;
   }
 
-  .activity-brief-info {
+  .activity-brief-info,
+  .personal-brief-info {
     background-color: #1c293bcf;
     color: var(--white);
     text-align: center;
@@ -1700,13 +1736,22 @@ blockquote cite {
     margin-right: 0px;
   }
 
-  h2.activity-heading {
+  p.personal-mini-para,
+  h2.personal-heading,
+  ul.personal-objects-used,
+  .personal-btns {
+    margin-left: 0px;
+  }
+
+  h2.activity-heading,
+  h2.personal-heading {
     font-weight: bolder;
     padding-bottom: 0px;
     color: #f0f2f5;
   }
 
-  .activity-para {
+  .activity-para,
+  .personal-para {
     background-color: #ffffff00;
     /* padding: 20px; */
     padding: 20px 75px 20px;
@@ -1716,7 +1761,8 @@ blockquote cite {
     margin-right: 0px;
   }
 
-  ul.activity-objects-used {
+  ul.activity-objects-used,
+  ul.personal-objects-used {
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -1730,6 +1776,11 @@ blockquote cite {
   .acme-homes-article img {
     height: 428px;
     width: 500px;
+  }
+
+  ul.activity-objects-used,
+  ul.personal-objects-used {
+    color: #4b7bd0;
   }
   /*updates build.html end */
 }
@@ -1946,10 +1997,12 @@ blockquote cite {
     height: 428px;
     width: 500px;
   }
-  .activity-para {
+  .activity-para,
+  .personal-para {
     margin-right: 75px;
   }
-  .activity-para {
+  .activity-para,
+  .personal-para {
     padding-right: 10px;
   }
 
@@ -1963,29 +2016,19 @@ blockquote cite {
     width: 400px;
   }
 
-  .activity-brief-info {
-    /* background-color: #1c293bcf;
-    color: var(--white);
-    text-align: center;
-    align-self: center; */
-    /* margin: -8px 30px -2px -55px; */
-    /* z-index: 1;
-    position: absolute;
-    margin-top: -4px; */
-    /* margin-left: 168px; */
-    /* margin-right: 166px; */
-    /* flex-direction: column; */
+  .activity-brief-info,
+  .personal-brief-info {
     width: 400px;
     height: 350px;
-    /* display: grid;
-    align-content: center; */
   }
 
-  p.activity-mini-para {
+  p.activity-mini-para,
+  p.personal-mini-para {
     display: none;
   }
 
-  h2.activity-heading {
+  h2.activity-heading,
+  h2.personal-heading {
     font-weight: bolder;
     padding-bottom: 0px;
     color: #ffffff;
@@ -1993,12 +2036,14 @@ blockquote cite {
     font-family: system-ui;
   }
 
-  .activity-para {
+  .activity-para,
+  .personal-para {
     padding-right: 10px;
     text-align: initial;
   }
 
-  ul.activity-objects-used {
+  ul.activity-objects-used,
+  ul.personal-objects-used {
     display: none;
   }
 
