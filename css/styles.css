@@ -851,6 +851,7 @@ ul.things-built-list a {
   text-decoration: none;
 }
 
+li.module-list-item,
 li.activity-list-item,
 li.personal-list-item {
   margin-bottom: 100px;
@@ -862,6 +863,7 @@ section.things-built-section {
   max-width: 1000px;
 }
 
+.module-tracker,
 .activity-tracker,
 .personal-website,
 .acme-homes {
@@ -882,6 +884,7 @@ ul.acme-objects-used {
   padding-bottom: 30px;
 }
 
+ul.module-objects-used,
 ul.personal-objects-used {
   list-style: none;
   text-decoration: none;
@@ -894,6 +897,7 @@ ul.personal-objects-used {
   padding-bottom: 30px;
 }
 
+p.module-mini-para,
 p.activity-mini-para,
 p.acme-mini-para,
 p.personal-mini-para {
@@ -902,6 +906,7 @@ p.personal-mini-para {
   color: var(--blue);
 }
 
+.module-para,
 .activity-para,
 .acme-para,
 .personal-para {
@@ -914,6 +919,7 @@ p.personal-mini-para {
   border-radius: 10px;
 }
 
+h2.module-heading,
 h2.activity-heading,
 h2.acme-heading,
 h2.personal-heading {
@@ -922,6 +928,10 @@ h2.personal-heading {
   color: var(--navy);
 }
 
+p.module-mini-para,
+h2.module-heading,
+ul.module-objects-used,
+.module-btns,
 p.personal-mini-para,
 h2.personal-heading,
 ul.personal-objects-used,
@@ -939,9 +949,12 @@ ul.acme-objects-used,
 .acme-btns {
   margin-right: -30px;
 }
+
+ul.module-objects-used,
 ul.personal-objects-used {
   padding-left: 0px;
 }
+
 .activity-brief-info,
 .acme-brief-info {
   background-color: rgba(211, 211, 211, 0);
@@ -952,6 +965,7 @@ ul.personal-objects-used {
   z-index: 1;
 }
 
+.module-brief-info,
 .personal-brief-info {
   background-color: rgba(211, 211, 211, 0);
   color: var(--white);
@@ -982,6 +996,7 @@ ul.personal-objects-used {
 /* changes end */
 
 /*Space between btn's*/
+#module-live-btn,
 #activity-live-btn,
 #personal-live-btn,
 #acme-live-btn {
@@ -989,6 +1004,7 @@ ul.personal-objects-used {
   border-radius: 10px;
 }
 
+a#module-code-btn,
 a#activity-code-btn,
 a#personal-code-btn,
 a#acme-code-btn {
@@ -1429,6 +1445,7 @@ blockquote cite {
     align-items: flex-start;
   }
 
+  .module-tracker,
   .activity-tracker,
   .personal-website {
     align-self: center;
@@ -1526,6 +1543,7 @@ blockquote cite {
     align-items: flex-start;
   }
 
+  .module-tracker,
   .activity-tracker,
   .personal-website {
     align-self: center;
@@ -1758,6 +1776,7 @@ blockquote cite {
     height: 100%;
   }
 
+  .module-brief-info,
   .activity-brief-info,
   .acme-brief-info,
   .personal-brief-info {
@@ -1790,6 +1809,10 @@ blockquote cite {
     margin-right: 0px;
   }
 
+  p.module-mini-para,
+  h2.module-heading,
+  ul.module-objects-used,
+  .module-btns,
   p.personal-mini-para,
   h2.personal-heading,
   ul.personal-objects-used,
@@ -1797,6 +1820,7 @@ blockquote cite {
     margin-left: 0px;
   }
 
+  h2.module-heading,
   h2.activity-heading,
   h2.acme-heading,
   h2.personal-heading {
@@ -1805,6 +1829,7 @@ blockquote cite {
     color: #f0f2f5;
   }
 
+  .module-para,
   .activity-para,
   .acme-para,
   .personal-para {
@@ -1817,6 +1842,7 @@ blockquote cite {
     margin-right: 0px;
   }
 
+  ul.module-objects-used,
   ul.activity-objects-used,
   ul.acme-objects-used,
   ul.personal-objects-used {
@@ -1828,6 +1854,7 @@ blockquote cite {
     margin: 0px;
   }
 
+  .module-tracker img,
   .activity-tracker img,
   .personal-website img,
   .acme-homes img {
@@ -1835,6 +1862,7 @@ blockquote cite {
     width: 500px;
   }
 
+  ul.module-objects-used,
   ul.activity-objects-used,
   ul.acme-objects-used,
   ul.personal-objects-used {
@@ -2003,6 +2031,7 @@ blockquote cite {
     left: 78px;
   }
 
+  .module-tracker img,
   .activity-tracker img,
   .personal-website img,
   .acme-homes img {
@@ -2029,6 +2058,7 @@ blockquote cite {
     margin-top: 16%;
   }
 
+  .module-tracker img,
   .activity-tracker img,
   .personal-website img,
   .acme-homes img {
@@ -2046,6 +2076,7 @@ blockquote cite {
 
 @media screen and (max-width: 460px) {
   /* build.html start */
+  .module-tracker img,
   .activity-tracker img,
   .acme-tracker img,
   .personal-website img {
@@ -2059,17 +2090,22 @@ blockquote cite {
     padding: 5px;
   }
 
+  .module-tracker img,
   .activity-tracker img,
   .acme-tracker img,
   .personal-website img {
     height: 428px;
     width: 500px;
   }
+
+  .module-para,
   .activity-para,
   .acme-para,
   .personal-para {
     margin-right: 75px;
   }
+
+  .module-tracker,
   .activity-para,
   .acme-para,
   .personal-para {
@@ -2080,6 +2116,7 @@ blockquote cite {
     width: 400px;
   }
 
+  .module-tracker img,
   .activity-tracker img,
   .acme-tracker img,
   .personal-website img {
@@ -2087,6 +2124,7 @@ blockquote cite {
     width: 400px;
   }
 
+  .module-brief-info,
   .activity-brief-info,
   .acme-brief-info,
   .personal-brief-info {
@@ -2094,12 +2132,14 @@ blockquote cite {
     height: 350px;
   }
 
+  p.module-mini-para,
   p.activity-mini-para,
   p.acme-mini-para,
   p.personal-mini-para {
     display: none;
   }
 
+  h2.module-heading,
   h2.activity-heading,
   h2.acme-heading,
   h2.personal-heading {
@@ -2110,6 +2150,7 @@ blockquote cite {
     font-family: system-ui;
   }
 
+  .module-para,
   .activity-para,
   .acme-para,
   .personal-para {
@@ -2117,6 +2158,7 @@ blockquote cite {
     text-align: initial;
   }
 
+  ul.module-objects-used,
   ul.activity-objects-used,
   ul.acme-objects-used,
   ul.personal-objects-used {
@@ -2179,6 +2221,7 @@ blockquote cite {
     padding-bottom: 10px;
   }
 
+  .module-tracker img,
   .activity-tracker img,
   .personal-website img,
   .acme-homes img {
@@ -2225,6 +2268,7 @@ blockquote cite {
     margin-top: 42%;
   }
 
+  .module-tracker img,
   .activity-tracker img,
   .personal-website img,
   .acme-homes img {
@@ -2298,6 +2342,7 @@ blockquote cite {
     margin-top: 42%;
   }
 
+  .module-tracker img,
   .activity-tracker img,
   .personal-website img,
   .acme-homes img {
@@ -2305,6 +2350,7 @@ blockquote cite {
     width: 250px;
   }
 
+  .module-brief-info,
   .activity-brief-info,
   .personal-brief-info,
   .acme-brief-info {
