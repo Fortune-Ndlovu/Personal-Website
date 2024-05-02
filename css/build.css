@@ -1,0 +1,93 @@
+/* section.things-built-section {
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 1000px;
+} */
+
+section.build-section-hero-section {
+		background-color: #1d3152;
+		color: #fff;
+    padding-top: 100px;
+	}
+
+	.build-section-hero-wrapper {
+    /* padding-top: 200px; */
+    /* padding-bottom: 95px; */
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
+    gap: 34px;
+	}
+
+  ul.build-section-hero-wrapper-objects-used {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-top: 14px;
+}
+
+a.build-section-hero-view-site-live.btn.btn-outline-primary,
+a.build-section-hero-view-site-code.btn.btn-outline-primary,
+a.build-section-hero-read-academic-research.btn.btn-outline-primary {
+    border-radius: 10px;
+}
+
+  .build-section-hero-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .build-section-hero-text-section,
+  .build-section-hero-video-section {
+    flex: 1;
+    min-width: 300px; /* Minimum width of each section */
+  }
+
+  .build-section-hero-video-section {
+    flex: 1;
+    min-height: 300px; /* Minimum width of each section */
+  }
+
+  .btn {
+    margin: 5px; /* Spacing between buttons */
+  }
+
+  iframe {
+    max-width: 100%;
+    height: 100%;
+  }
+
+    /*************************** Media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .build-section-hero-wrapper {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+              padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    iframe {
+    max-width: 100%;
+    height: revert-layer;
+}
+
+ul.build-section-hero-wrapper-objects-used {
+   display: list-item;
+}
+  }
