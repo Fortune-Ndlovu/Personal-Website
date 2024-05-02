@@ -859,7 +859,7 @@ li.personal-list-item {
 
 section.things-built-section {
   margin: 0px auto;
-  padding: 100px 0px;
+  /* padding: 100px 0px; */
   max-width: 1000px;
 }
 
@@ -1041,7 +1041,8 @@ a#acme-code-btn {
 }
 
 .developers-work h2 {
-  color: var(--grey);
+  color: var(--navy);
+  margin-bottom: 60px;
 }
 
 /******************************* write.html file style's end */
@@ -1550,7 +1551,7 @@ blockquote cite {
   }
 
   .developers-work {
-    margin-top: 32%;
+    margin-top: 10%;
   }
 
   /* build.html end */
