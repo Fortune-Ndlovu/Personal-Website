@@ -12,163 +12,84 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="shortcut icon" type="image/svg" href="../img/favicon.svg" />
-    <title>Fortune Ndlovu: Front-End Developer, UX & UI Engineer.</title>
-    <script
-        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "6a87960a-fbe1-48b1-9361-e587b7a94dae"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+    <title>Fortune Ndlovu: Articles</title>
 </head>
 
 <body>
     <header>
-        <!-- NAVIGATION START -->
         <nav class="nav" id="topMenu" role="navigation">
             <a href="../index.html" class="logo">
                 <img src="../img/logo.svg" alt="Fortune logo that says fortune with a red dot at the end" width="200"
                     height="38">
-            </a><!-- logo -->
+            </a>
             <ul class="nav-links">
                 <button class="btn hamburger"><i class="fa-solid fa-burger" aria-hidden="true"></i></button>
-                <!-- hamburger -->
                 <div class="navitems container">
-                    <div class="navbar menu">
-                        <li class="home-btn nav-link"><a title="Home" href="../index.html">HOME</a></li>
-                        <li class="work-btn nav-link"><a title="Work" href="../index.html#building">WORK</a></li>
-                        <li class="contact-btn nav-link"><a title="Contact" href="#send-message">CONTACT</a></li>
-                        <li class="download-btn"><a title="Download Resume" href="../img/Fortune-Ndlovu-Resume.pdf"
-                                download="Fortune Ndlovu Resume" target="_blank"
-                                class="btn btn-outline-primary">Download
-                                Resume</a></li>
-                    </div><!-- navbar -->
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../index.html#building">WORK</a></li>
+                    <li><a href="#send-message">CONTACT</a></li>
+                    <li><a href="../img/Fortune-Ndlovu-Resume.pdf" download="Fortune Ndlovu Resume"
+                            class="btn btn-outline-primary">Download Resume</a></li>
                 </div>
             </ul>
         </nav>
-        <!-- NAVIGATION END -->
-        <section class="work-section">
-            <div class="developers-work">
-                <h2>Recent Articles</h2>
-            </div>
-        </section>
     </header>
-    <main>
-        <!-- BACK TO TOP BTN -->
+    
+    <main class="d-flex">
+        <!-- Sidebar for article list -->
+        <aside class="bg-light p-3" style="width: 250px;">
+            <h2>Articles</h2>
+            <ul id="articleList" class="list-unstyled">
+                <li><a href="#" data-article="web-accessibility" class="article-link">Web Accessibility: The Foundation</a></li>
+                <li><a href="#" data-article="ux-principles" class="article-link">UX Principles for Beginners</a></li>
+                <li><a href="#" data-article="js-frameworks" class="article-link">Understanding Modern JS Frameworks</a></li>
+            </ul>
+        </aside>
 
-        <section class="article-section">
-            <article class="article-0">
-                <a title="Web Accessibility: The Foundation" href="../pages/article.html">
-                    <div class="title-container">
-                        <div>
-                            <time datetime="2022-08-4 20:00" aria-label="Published on: 4 August 2022">4 August
-                                2022</time>
-                        </div>
-                        <h2 class="article-00-title">Web Accessibility: The Foundation</h2>
-                        <p class="article-00-para">The World Wide Web is for everyone. As web designers and
-                            developers,
-                            <br> we must ensure that we properly design and code websites including web tools that
-                            are
-                            accessible...
-                        </p>
-                    </div>
-                </a>
-            </article>
-        </section>
-        <!-- THE FORM SECTION START -->
-        <section id="send-message">
-            <div class="inner-content">
-                <h2 class="content-l2-heading">Send me a message!</h2>
-                <p class="content-para">Got a relevant opportunity for me, or just want
-                    to say hello? <br>Go ahead, I'll respond.</p>
-                <form action="https://formsubmit.co/hello@fortunendlovu.com" method="POST" id="message-form">
-                    <div class="firstRow">
-                        <div class="row">
-                            <div class="col" id="name-col">
-                                <label for="user-Name" accesskey="N">Your Name</label>
-                                <input name="user-Name" type="text" id="user-Name" class="form-control" required
-                                    aria-required="true" placeholder="Enter your name">
-                                <input type="hidden" name="_next"
-                                    value="https://fortunendlovu.com/pages/thank_you.html">
-                                <input type="hidden" name="_subject" value="New submission WOoooOOO!">
-                                <input type="hidden" name="_captcha" value="false">
-
-                            </div>
-                            <div class="col" id="email-col">
-                                <label for="user-email" accesskey="E">Email Address</label>
-                                <input name="user-email" type="email" id="user-email" class="form-control" required
-                                    aria-required="true" placeholder="you@example.com">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="secondRow">
-                        <div class="row">
-                            <div class="col" class="form-group" id="plan">
-                                <label for="plan" accesskey="P">Plan (optional)</label>
-                                <select id="dropdown" class="form-select" aria-label="Optional website plan request"
-                                    id="plan">
-                                    <option value=""></option>
-                                    <option value="Basic">Basic</option>
-                                    <option value="Standard">Standard</option>
-                                    <option value="Premium">Premium</option>
-                                </select>
-                            </div>
-                            <div class="col" class="form-group" id="message-col">
-                                <label for="user-message" accesskey="M">Your Message</label>
-                                <textarea name="user-message" class="form-control" id="user-message" rows="3" required
-                                    aria-required="true"
-                                    placeholder="Hi Fortune, we would kindly appreciate your JavaScript, UX & UI expertise for our product at Company X. How soon can you hop on?"
-                                    style="height: 60px;"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-btn">
-                        <button title="Send Message" type="submit" class="btn btn-outline-primary" id="shoot-form"
-                            accesskey="S">Send
-                        </button>
-                    </div>
-                </form>
+        <!-- Main content area for articles -->
+        <section class="p-4" style="flex: 1;">
+            <div id="articleContent">
+                <h2>Welcome to My Articles</h2>
+                <p>Select an article from the list on the left to read its content.</p>
             </div>
         </section>
-        <!-- THE FORM SECTION START -->
     </main>
-    <!-- THE FOOTER CONTENT START -->
+
     <footer class="footer">
         <section class="contact-developer">
-            <div class="developer-socials">
-                <div class="say-hello">
-                    <h2>Say Hello</h2><br>
-                    <a title="hello@fortunendlovu.com" class="site-email"
-                        href="mailto:hello@fortunendlovu.com">hello@fortunendlovu.com</a>
-                    <div class="container-socials"><br>
-                        <ul class="socials">
-                            <li><a title="GitHub" target="_blank" href="https://github.com/Fortune-Ndlovu"
-                                    target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a title="Linkedin" href="https://www.linkedin.com/in/fortune-ndlovu-007isme/"
-                                    target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a title="YouTube" href="https://www.youtube.com/channel/UC-2nTkG-OZZy-OfHtRADfeg"
-                                    target="_blank"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a title="Instagram" href="https://www.instagram.com/fortunendlovu_007/"
-                                    target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="my-work">
-                    <a title="Download Resume" target="_blank" href="../img/Fortune-Ndlovu-Resume.pdf"
-                        download="Fortune Ndlovu Resume" class="btn btn-outline-primary" id="resume-btn">
-                        Download Resume
-                    </a>
-                </div>
-            </div>
-            <hr>
-            <div class="copyright">
-                <p>&copy; Fortune Ndlovu
-                    <script>document.write(new Date().getFullYear());</script>
-                </p>
-            </div>
+            <h2>Say Hello</h2>
+            <a href="mailto:hello@fortunendlovu.com">hello@fortunendlovu.com</a>
+            <p>&copy; Fortune Ndlovu <script>document.write(new Date().getFullYear());</script></p>
         </section>
     </footer>
-    <!-- THE FOOTER CONTENT END -->
+
+    <script src="../libs/script.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const articleLinks = document.querySelectorAll('.article-link');
+            const articleContent = document.getElementById('articleContent');
+
+            function loadArticle(articleId) {
+                fetch(`../articles/${articleId}.html`)
+                    .then(response => response.text())
+                    .then(data => {
+                        articleContent.innerHTML = data;
+                    })
+                    .catch(error => {
+                        articleContent.innerHTML = '<p>Sorry, the article could not be loaded.</p>';
+                    });
+            }
+
+            // Add event listeners to article links
+            articleLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const articleId = link.getAttribute('data-article');
+                    loadArticle(articleId);
+                });
+            });
+        });
+    </script>
 </body>
-<script src="../libs/script.js" defer></script>
 
 </html>
