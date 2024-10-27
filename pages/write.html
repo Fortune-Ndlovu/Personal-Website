@@ -8,6 +8,7 @@
     <meta name="description"
         content="Fortune Ndlovu is a Front-End Developer and UX, UI Engineer highly skilled at building accessible web applications and design systems.">
     <script src="https://kit.fontawesome.com/d268b9c6f3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -17,23 +18,31 @@
 
 <body>
     <header>
+        <!-- NAVIGATION START -->
         <nav class="nav" id="topMenu" role="navigation">
             <a href="../index.html" class="logo">
                 <img src="../img/logo.svg" alt="Fortune logo that says fortune with a red dot at the end" width="200"
                     height="38">
-            </a>
+            </a><!-- logo -->
             <ul class="nav-links">
                 <button class="btn hamburger"><i class="fa-solid fa-burger" aria-hidden="true"></i></button>
+                <!-- hamburger -->
                 <div class="navitems container">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="../index.html#building">WORK</a></li>
-                    <li><a href="#send-message">CONTACT</a></li>
-                    <li><a href="../img/Fortune-Ndlovu-Resume.pdf" download="Fortune Ndlovu Resume"
-                            class="btn btn-outline-primary">Download Resume</a></li>
+                    <div class="navbar menu">
+                        <li class="home-btn nav-link"><a title="Home" href="../index.html">HOME</a></li>
+                        <li class="work-btn nav-link"><a title="Work" href="../index.html#building">WORK</a></li>
+                        <li class="contact-btn nav-link"><a title="Contact" href="#send-message">CONTACT</a></li>
+                        <li class="download-btn"><a title="Download Resume" href="../img/Fortune-Ndlovu-Resume.pdf"
+                                download="Fortune Ndlovu Resume" target="_blank"
+                                class="btn btn-outline-primary">Download
+                                Resume</a></li>
+                    </div><!-- navbar -->
                 </div>
             </ul>
         </nav>
     </header>
+<section class="things-built-section">
+
     
     <main class="d-flex">
         <!-- Sidebar for article list -->
@@ -41,11 +50,11 @@
             <h2>Articles</h2>
             <ul id="articleList" class="list-unstyled">
                 <li><a href="#" data-article="web-accessibility" class="article-link">Web Accessibility: The Foundation</a></li>
-                <li><a href="#" data-article="ux-principles" class="article-link">UX Principles for Beginners</a></li>
-                <li><a href="#" data-article="js-frameworks" class="article-link">Understanding Modern JS Frameworks</a></li>
+                <!-- <li><a href="#" data-article="ux-principles" class="article-link">UX Principles for Beginners</a></li>
+                <li><a href="#" data-article="js-frameworks" class="article-link">Understanding Modern JS Frameworks</a></li> -->
             </ul>
         </aside>
-
+        
         <!-- Main content area for articles -->
         <section class="p-4" style="flex: 1;">
             <div id="articleContent">
@@ -54,42 +63,48 @@
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        <section class="contact-developer">
-            <h2>Say Hello</h2>
-            <a href="mailto:hello@fortunendlovu.com">hello@fortunendlovu.com</a>
-            <p>&copy; Fortune Ndlovu <script>document.write(new Date().getFullYear());</script></p>
-        </section>
-    </footer>
-
+    
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="../libs/script.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const articleLinks = document.querySelectorAll('.article-link');
             const articleContent = document.getElementById('articleContent');
-
+            
             function loadArticle(articleId) {
-                fetch(`../articles/${articleId}.html`)
-                    .then(response => response.text())
+                fetch(`../articles/${articleId}.md`)
+                    .then(response => response.ok ? response.text() : '## Article not found.')
                     .then(data => {
-                        articleContent.innerHTML = data;
+                        // Convert Markdown to HTML using marked.js
+                        articleContent.innerHTML = marked.parse(data);
+                        window.scrollTo(0, 0);
                     })
-                    .catch(error => {
-                        articleContent.innerHTML = '<p>Sorry, the article could not be loaded.</p>';
+                    .catch(() => {
+                        articleContent.innerHTML = '<p>Sorry, there was an error loading the article.</p>';
                     });
             }
-
+    
             // Add event listeners to article links
             articleLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
                     const articleId = link.getAttribute('data-article');
                     loadArticle(articleId);
+                    articleLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
                 });
             });
+    
+            // Load the first article by default
+            if (articleLinks.length > 0) {
+                loadArticle(articleLinks[0].getAttribute('data-article'));
+                articleLinks[0].classList.add('active');
+            }
         });
     </script>
+    
+
 </body>
 
 </html>
