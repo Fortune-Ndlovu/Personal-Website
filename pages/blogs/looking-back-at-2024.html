@@ -44,12 +44,27 @@
             <section class="web-accessibility-section">
                 <article class="article-foundation">
                     <header class="post-header">
+                        <a title="Return" href="../../pages/write.html"><i class="fa-solid fa-arrow-left"></i> Return to Recent Articles</a><br><br>
+
                         <div class="note">
                             <time class="note-time" datetime="2025-01-2 02:00"
                                 aria-label="Published on: 2 January 2025">2
                                 January
                                 2024</time>
                             <span>4 min read</span>
+
+                            <a title="Share on LinkedIn" class="share-icon" onclick="shareOnLinkedIn()">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <script>
+                                function shareOnLinkedIn() {
+                                    const postUrl = encodeURIComponent("https://fortunendlovu.com/pages/blogs/looking-back-at-2024.html");
+                                    const postTitle = encodeURIComponent("Looking Back on 2024");
+                                    const postSummary = encodeURIComponent("As 2024 comes to a close, I felt it was important to think more deeply about what went right and what went wrong, so that I have the opportunity to learn.");
+                                    const linkedInUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${postUrl}&title=${postTitle}&summary=${postSummary}&source=LinkedIn`;
+                                    window.open(linkedInUrl, '_blank', 'width=600,height=400');
+                                }
+                            </script>
                         </div>
                         <h2 class="post-header-title">Looking Back on 2024</h2>
                     </header>
@@ -97,8 +112,8 @@
                     </ul><br>
                     <p>2025 is not a time for thinking about what you are going to do, it is about taking action and achieving your goals. I will be achieving my goals simply by continuing to keep my head down, being resilient, and disciplined, and sharing my knowledge with others. Let’s make 2025 our greatest year, yet!</p>
                     <br>
-                    <a title="Return" href="../../pages/write.html" id="return-btn"
-                            class="btn btn-outline-primary">Return</a>
+                    <a title="Return" href="../../pages/write.html"><i class="fa-solid fa-arrow-left"></i> Return to Recent Articles</a><br><br>
+
                 </div>
                 </article>
             </section>

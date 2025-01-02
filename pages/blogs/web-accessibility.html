@@ -43,17 +43,30 @@
         <main>
             <section class="web-accessibility-section">
                 <article class="article-foundation">
-                    <header class="post-header">
-                        <div class="note">
-                            <time class="note-time" datetime="2022-08-4 20:00"
-                                aria-label="Published on: 4 August 2022">4
-                                August
-                                2022</time>
-                            <span>7 min read</span>
-                        </div>
-                        <h2 class="post-header-title">Web Accessibility: The Foundation</h2>
-                    </header>
                     <div class="post-content">
+                        <header class="post-header">
+                            <a title="Return" href="../../pages/write.html"><i class="fa-solid fa-arrow-left"></i> Return to Recent Articles</a><br><br>
+                            <div class="note">
+                                <time class="note-time" datetime="2022-08-4 20:00"
+                                    aria-label="Published on: 4 August 2022">4
+                                    August
+                                    2022</time>
+                                <span>7 min read</span>
+                                <a title="Share on LinkedIn" class="share-icon" onclick="accessibilityShareOnLinkedIn()">
+                                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                                <script>
+                                    function accessibilityShareOnLinkedIn() {
+                                        const postUrl = encodeURIComponent("https://fortunendlovu.com/pages/blogs/web-accessibility.html");
+                                        const postTitle = encodeURIComponent("Web Accessibility: The Foundation");
+                                        const postSummary = encodeURIComponent("The World Wide Web is for everyone. As web designers and developers, we must ensure that we properly design and code websites including web tools that are accessible to everyone.");
+                                        const linkedInUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${postUrl}&title=${postTitle}&summary=${postSummary}&source=LinkedIn`;
+                                        window.open(linkedInUrl, '_blank', 'width=600,height=400');
+                                    }
+                                </script>
+                            </div>
+                            <h2 class="post-header-title">Web Accessibility: The Foundation</h2>
+                        </header>
 
                         <p class="introduction">The World Wide Web is for everyone. As web designers and developers, we
                             must ensure that we properly design and code websites including web tools that are
@@ -282,8 +295,7 @@
                             <li><a href="https://www.w3schools.com/accessibility/" target="_blank">Accessibility
                                     Tutorial</a> by the W3schools</li>
                         </ul><br><br>
-                        <a title="Return" href="../../pages/write.html" id="return-btn"
-                            class="btn btn-outline-primary">Return</a>
+                        <a title="Return" href="../../pages/write.html"><i class="fa-solid fa-arrow-left"></i> Return to Recent Articles</a><br><br>
                     </div>
                 </article>
             </section>
