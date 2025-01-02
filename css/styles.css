@@ -1046,9 +1046,10 @@ a#acme-code-btn {
   margin-bottom: 60px;
 }
 
-a.share-icon {
+#share-icon {
   font-size: 24px;
   margin-left: 50px;
+  color: #0077B5;
 }
 
 /******************************* write.html file style's end */
